@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  /* Layout breakpoints */
+
+  --mobile: 375px;
+  --tablet: 768px;
+  --desktop: 1440px;
+
+  /* Primary colors */
+
+  --softRed: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --darkDesaturatedCyan: hsl(167, 40%, 24%);
+  --darkBlue: hsl(198, 62%, 26%);
+  --darkModerateCyan: hsl(168, 34%, 41%);
+
+  /* Neutral colors */
+
+  --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+  --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+  --darkGrayishBlue: hsl(232, 10%, 55%);
+  --grayishBlue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  --fontBase: 18px;
+  --fontLarge: 32px;
+  --fontExtraLarge: 40px;
+
+  /* Font */
+
+  --fontBarlow: "Barlow", sans-serif;
+  --fontFraunces: "Fraunces", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section-title {
+  color: var(--veryDarkDesaturatedBlue);
+  font-family: var(--fontFraunces);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.286px;
+}
+
+.section-copy {
+  color: var(--darkGrayishBlue);
+}
