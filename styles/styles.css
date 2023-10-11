@@ -29,6 +29,7 @@
   --fontBase: 18px;
   --fontLarge: 32px;
   --fontExtraLarge: 40px;
+  --fontExtraLarge2: 56px;
 
   /* Font */
 
@@ -40,6 +41,90 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.show-mobile {
+  display: block;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.header {
+  background: url("/images/mobile/image-header.jpg");
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__title {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--fontFraunces);
+  font-size: var(--fontExtraLarge2);
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.nav__logo {
+  width: 170px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hide-mobile {
+    display: block;
+  }
+
+  .show-mobile {
+    display: none;
+  }
+
+  .header {
+    background: url("/images/desktop/image-header.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 34px;
+    width: 1352px;
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 47px;
+  }
 }
 
 .section-title {
@@ -54,4 +139,37 @@
 
 .section-copy {
   color: var(--darkGrayishBlue);
+}
+
+.nav__item {
+  color: var(--white);
+  font-family: var(--fontBarlow);
+  font-size: var(--fontBase);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: -0.129px;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+}
+
+.nav__item:nth-of-type(4) {
+  color: #24303e;
+  font-family: var(--fontFraunces) 9pt Soft;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+  letter-spacing: -0.107px;
+  text-transform: uppercase;
+  border-radius: 28px;
+  background: var(--white);
+  padding: 16px 30px 15px 32px;
+}
+
+.nav__item:nth-of-type(4):hover::after {
+  opacity: 0.25;
+  color: var(--white);
 }

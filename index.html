@@ -16,19 +16,26 @@
     <title>Sunnyside agency landing page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+    <header class="header">
+      <nav class="nav">
+        <img src="/images/logo.svg" class="nav__logo" />
+        <ul class="nav__list hide-mobile">
+          <li class="nav__item">About</li>
+          <li class="nav__item">Services</li>
+          <li class="nav__item">Projects</li>
+          <li class="nav__item">Contact</li>
         </ul>
+        <div class="show-mobile">
+          <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+              fill="#FFF"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
       </nav>
-
-      <section>
-        <h1>We are creatives</h1>
-      </section>
+      <h1 class="header__title">We are creatives</h1>
     </header>
     <main>
       <section>
